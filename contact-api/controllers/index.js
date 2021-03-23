@@ -3,7 +3,6 @@ require('dotenv').config();
 var https   = require("https");
 var fs      = require("fs");
 
-
 const sendEmail =(req,res)=>{
     const name= req.body.user.name;
     const email =req.body.user.email;
@@ -133,9 +132,6 @@ const sendInvoice= (req,res)=>{
             console.log('Email sent: ' + info.response);
         }
     });	
-
-
-   
 }
 
 module.exports = {
