@@ -118,7 +118,7 @@ if (mysqli_num_rows($query) > 0) {
 								value="<?php echo $fname.' '.$lname; ?>" />
 							<input type="hidden" name="email"
 								value="<?php echo $email; ?>" />
-							<input style="float:left; margin-right:20px value=" Send Invoice" type="submit" name=""
+							<input style="float:left; margin-right:20px" value="Send Invoice" type="submit" name=""
 								class="btn btn-primary btn-md">
 							<a href="index.php" style="float:right; margin-right:20px"
 								class="btn btn-success btn-md">Continue Shopping</a>
