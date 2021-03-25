@@ -16,14 +16,16 @@ if (mysqli_num_rows($query) > 0) {
     }
 
     for ($i = 0; $i < count($product_id); ++$i) {
-        $sql = "INSERT INTO orders (user_id,product_id) VALUES ('$user_id','"
+        $sql = "INSERT INTO orders (user_id,product_id,qty) VALUES ('$user_id','"
                     .$product_id[$i]."','".$qty[$i]."')";
+        echo $sql;
         mysqli_query($con, $sql);
-        // echo 'inserted';
+        echo 'inserted';
     }
     $sql = "DELETE FROM cart WHERE user_id = '$user_id'";
-
     if (mysqli_query($con, $sql)) {
+    }
+}
         ?>
 <!DOCTYPE html>
 <html>
@@ -135,7 +137,3 @@ if (mysqli_num_rows($query) > 0) {
 </body>
 
 </html>
-
-<?php
-    }
-}

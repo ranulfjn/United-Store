@@ -20,7 +20,7 @@ const sendEmail =(req,res)=>{
         from: process.env.EMAIL,
         to: email,
         subject: 'Message Received',
-        text: name +' Your  message was received . We will contact you shortly . Keep shooping with us for more discounts .',
+        text: name +'Your message was received. We will contact you shortly. Keep shooping with us for more discounts .',
 
     };
     
