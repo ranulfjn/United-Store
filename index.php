@@ -23,19 +23,18 @@ if (isset($_SESSION['uid'])) {
 	<script src="main.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap"
-		rel="stylesheet">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 	<style>
 		.headline {
 			margin-top: 0;
 			text-align: center;
-			font-size: 40px;
-			font-weight: 800;
+			font-size: 30px;
+			font-weight: 600;
 		}
 
 		.trending {
-			width: 265px;
+			margin: 5px auto;
 		}
 
 		.retro {
@@ -46,17 +45,19 @@ if (isset($_SESSION['uid'])) {
 		.home-content-header {
 			font-size: 50px;
 			text-align: center;
-			text-decoration: underline;
+
 		}
 
 		.home-content {
+			overflow: scroll;
 			text-align: justify;
 			padding: 20px;
 			padding-bottom: 30px;
-			overflow-y: none;
-			font-size: 20px;
+			overflow-x: hidden;
+			font-size: 15px;
 			height: 200px;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
+			font-weight: 400;
 		}
 
 
@@ -64,7 +65,7 @@ if (isset($_SESSION['uid'])) {
 			font-size: 25px;
 			font-weight: 700;
 			margin: 20px;
-			font-family: 'Barlow Condensed', sans-serif;
+			font-family: 'Montserrat', sans-serif;
 		}
 
 		iframe {
@@ -75,7 +76,7 @@ if (isset($_SESSION['uid'])) {
 		.home-content,
 		.home-content-header,
 		.headline {
-			font-family: 'Barlow Condensed', sans-serif;
+			font-family: 'Montserrat', sans-serif;
 		}
 
 		#img1 {
@@ -144,30 +145,30 @@ if (isset($_SESSION['uid'])) {
 		<div class="row">
 			<a href="product.php"><img src="product_images/M4.jpg" alt="Retro jersey" class="retro"> </a>
 			<div class="headline">
-				TRENDING PLAYERS
+				<img src="product_images/trending.png">
 			</div>
 			<div class="container-fluid" margin="20px 0">
 				<div class="row row-no-gutter">
-					<div class="col-sm-2 img-responsive img-fluid">
+					<div class="col-sm-6 col-md-4 col-lg-2 img-responsive ">
 						<a href="product.php"><img src="product_images/martial.jpg" alt="Retro jersey" width="100%">
 						</a>
 					</div>
-					<div class="col-sm-2 img-responsive img-fluid">
+					<div class="col-sm-6 col-md-4 col-lg-2 img-responsive ">
 						<a href="product.php"><img src="product_images/Rashford.jpg" alt="Retro jersey" width="100%">
 						</a>
 					</div>
-					<div class="col-sm-2 img-responsive img-fluid">
+					<div class="col-sm-6 col-md-4 col-lg-2 img-responsive ">
 						<a href="product.php"><img src="product_images/fernandes.jpg" alt="Retro jersey" width="100%">
 						</a>
 					</div>
-					<div class="col-sm-2 img-responsive" img-fluid>
+					<div class="col-sm-6  col-md-4 col-lg-2 img-responsive">
 						<a href="product.php"><img src="product_images/greenwood.jpg" alt="Retro jersey" width="100%">
 						</a>
 					</div>
-					<div class="col-sm-2 img-responsive" img-fluid>
+					<div class="col-sm-6 col-md-4 col-lg-2 img-responsive">
 						<a href="product.php"><img src="product_images/wan.jpg" alt="Retro jersey" width="100%"> </a>
 					</div>
-					<div class="col-sm-2 img-responsive" img-fluid>
+					<div class="col-sm-6 col-md-4  col-lg-2 img-responsive">
 						<a href="product.php"><img src="product_images/M6.jpg" alt="Retro jersey" width="100%"> </a>
 					</div>
 				</div>
@@ -176,9 +177,7 @@ if (isset($_SESSION['uid'])) {
 
 			<div>
 				<a href="product.php"><img src="product_images/M3.jpg" alt="Retro jersey" class="retro"> </a>
-				<div class="headline">
-					BUY OUR NEW RETRO KITS
-				</div>
+
 				<a href="product.php"><img src="product_images/Retro-Jersey.jpg" alt="Retro jersey" class="retro"> </a>
 
 
@@ -195,7 +194,7 @@ if (isset($_SESSION['uid'])) {
 				</div>
 			</div>
 
-			<div class="home-content-header">WHY CHOOSE US</div>
+
 			<div class="home-content">
 
 				<p> Let United Direct serve as your premier source of authentic Manchester United kits and gear! Suit up
@@ -228,8 +227,8 @@ if (isset($_SESSION['uid'])) {
 				</p>
 			</div>
 
-			<div class="container-fluid">
-				<div class="row row-no-gutter">
+			<div class="container-fluid" style="margin-top: 30px">
+				<div class="row ">
 					<div class="col-md-6 img-responsive">
 
 						<strong>

@@ -251,6 +251,15 @@ if (isset($_POST['Common'])) {
     if (isset($_POST['checkOutDetails'])) {
         if (mysqli_num_rows($query) > 0) {
             //display user cart item with "Ready to checkout" button if user is not login
+            echo ' <div class="row">
+
+							<div class="col-md-2 col-xs-2"><b>Item</b></div>
+							<div class="col-md-2 col-xs-2"><b> Name</b></div>
+							<div class="col-md-2 col-xs-2"><b>Quantity</b></div>
+							<div class="col-md-2 col-xs-2"><b> Price</b></div>
+							<div class="col-md-2 col-xs-2"><b>Price in <?php echo CURRENCY; ?></b></div>
+							<div class="col-md-2 col-xs-2"><b>Remove / Update</b></div>
+						</div> ';
             echo "<form method='post' action='login_form.php'>";
             $n = 0;
             while ($row = mysqli_fetch_array($query)) {
@@ -321,7 +330,7 @@ if (isset($_POST['Common'])) {
 								</form>';
             }
         } else {
-            echo ' <div>Your cart is empty </div>';
+            echo ' <h3 style=" text-decoration: none;"> Your cart is empty <a href="product.php"> Shop here.</a></h3>';
         }
     }
 }

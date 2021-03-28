@@ -94,17 +94,9 @@ require 'config/constants.php';
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<div class="card " style='margin-bottom:40px'>
-					<h3 style='margin-top:10px'>Shopping Cart </h3>
+					<h3 style='margin-top:10px'></h3>
 					<div class="panel-body">
-						<div class="row">
 
-							<div class="col-md-2 col-xs-2"><b>Item</b></div>
-							<div class="col-md-2 col-xs-2"><b> Name</b></div>
-							<div class="col-md-2 col-xs-2"><b>Quantity</b></div>
-							<div class="col-md-2 col-xs-2"><b> Price</b></div>
-							<div class="col-md-2 col-xs-2"><b>Price in <?php echo CURRENCY; ?></b></div>
-							<div class="col-md-2 col-xs-2"><b>Remove / Update</b></div>
-						</div>
 						<div id="cart_checkout"></div>
 					</div>
 				</div>
