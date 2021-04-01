@@ -48,10 +48,7 @@ class Credentials
 
 }
 
-//$c = new Credentials();
-//$c->createAdminAccount("Rizwan", "rizwan@gmail.com", "12345");
 
-//PRINT_R($c->loginAdmin("rizwan@gmail.com", "12345"));
 
 if (isset($_POST['admin_register'])) {
 	extract($_POST);

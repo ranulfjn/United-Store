@@ -44,10 +44,7 @@ class Customers
     }
 }
 
-/*$c = new Customers();
-echo "<pre>";
-print_r($c->getCustomers());
-exit();*/
+
 
 if (isset($_POST['GET_CUSTOMERS'])) {
     if (isset($_SESSION['admin_id'])) {
