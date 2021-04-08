@@ -15,9 +15,11 @@ if (mysqli_num_rows($query) > 0) {
         $qty[] = $row['qty'];
     }
 
+    $date = date('Y-m-d');
+
     for ($i = 0; $i < count($product_id); ++$i) {
-        $sql = "INSERT INTO orders (user_id,product_id,qty) VALUES ('$user_id','"
-                    .$product_id[$i]."','".$qty[$i]."')";
+        $sql = "INSERT INTO orders (user_id,product_id,qty,date) VALUES ('$user_id','"
+                    .$product_id[$i]."','".$qty[$i]."','".$date."')";
         echo $sql;
         mysqli_query($con, $sql);
         echo 'inserted';

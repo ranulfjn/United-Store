@@ -39,6 +39,7 @@ if (!isset($_SESSION['uid'])) {
 			margin: auto;
 			padding-right: 35px;
 		}
+
 		hr {
 			border-top: 2px solid #bbb;
 		}
@@ -86,7 +87,7 @@ if (!isset($_SESSION['uid'])) {
 						<?php
                             include_once 'db.php';
                             $user_id = $_SESSION['uid'];
-                            $orders_list = "SELECT o.order_id,o.user_id,o.product_id,o.qty,p.product_title,p.product_price,p.product_image FROM orders o,products p WHERE o.user_id='$user_id' AND o.product_id=p.product_id";
+                            $orders_list = "SELECT o.order_id,o.user_id,o.product_id,o.qty,p.product_title,p.product_price,p.product_image, o.date FROM orders o,products p WHERE o.user_id='$user_id' AND o.product_id=p.product_id";
                             $query = mysqli_query($con, $orders_list);
                             if (mysqli_num_rows($query) > 0) {
                                 while ($row = mysqli_fetch_array($query)) {
@@ -115,6 +116,12 @@ if (!isset($_SESSION['uid'])) {
 										<td><b><?php echo $row['qty']; ?></b>
 										</td>
 									</tr>
+									<tr>
+										<td> Order Date</td>
+										<td><b><?php echo $row['date']; ?></b>
+										</td>
+									</tr>
+
 
 
 								</table>
