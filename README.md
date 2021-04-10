@@ -7,8 +7,8 @@ relational databases. This is a project with the objective to develop a basic we
 used to develop such an application.
 
 
-<img src="https://user-images.githubusercontent.com/69053657/114251360-b8c06180-996e-11eb-8c63-445200f471be.gif" width="200" height="200" />
-![home](https://user-images.githubusercontent.com/69053657/114251360-b8c06180-996e-11eb-8c63-445200f471be.gif =250x250)
-![products](https://user-images.githubusercontent.com/69053657/114251462-1f457f80-996f-11eb-8dd4-22e3766e98c0.gif =250x250)
-![cart](https://user-images.githubusercontent.com/69053657/114251781-52d4d980-9970-11eb-8f0b-1f5c44cc7c4a.gif=250x250)
-![admin](https://user-images.githubusercontent.com/69053657/114251666-da6e1880-996f-11eb-97df-4be624846346.gif=250x250)
+
+![home](https://user-images.githubusercontent.com/69053657/114251360-b8c06180-996e-11eb-8c63-445200f471be.gif | width=100)
+![products](https://user-images.githubusercontent.com/69053657/114251462-1f457f80-996f-11eb-8dd4-22e3766e98c0.gif)
+![cart](https://user-images.githubusercontent.com/69053657/114251781-52d4d980-9970-11eb-8f0b-1f5c44cc7c4a.gif)
+![admin](https://user-images.githubusercontent.com/69053657/114251666-da6e1880-996f-11eb-97df-4be624846346.gif)
